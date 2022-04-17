@@ -62,7 +62,6 @@ const useInput = () => {
         dispatch({type:constants.email,...payload});  
     }
     const inputAddressHandler = (event) =>{
-        console.log("Address",event);
         const payload = {value:event.target.value,error:utilities.isEmpty(event.target.value)}
         dispatch({type:constants.address,...payload});  
     }
